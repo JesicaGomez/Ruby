@@ -15,3 +15,13 @@ x = numero.to_i
 x.times do 
  	puts frase.reverse
 end 
+#funcion de numero par o impar
+puts "ingrese un número"
+uno = gets.chomp
+
+x = uno.to_i
+if 
+	x % 2 == 0 
+	puts "Su númeor es par"
+	else puts "Su número es impar";
+end
