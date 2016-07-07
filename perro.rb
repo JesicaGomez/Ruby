@@ -5,11 +5,9 @@ class Perro    # método inicializar clase
    @raza = raza  
    @nombre = nombre  
  end  
-
  # método ladrar
  #string pura sin salto de linea ni interpolaciones
  def ladrar
- 	
    puts 'Guau! Guau!'  
  end  
 
@@ -32,6 +30,7 @@ if d.respond_to?("correr")
 else  
  puts "Lo siento, el objeto no entiende el mensaje 'correr'"  
 end  
+
 #estoy llamando un objeto con un metodo invocado
 d.ladrar
 d.saludar  
@@ -40,5 +39,6 @@ d.saludar
 tipos de variable $ globales, @variables de metodos @@ variables de clase, 
 %w en la consola convierte todo lo que hay en el array en string
 /hd/ donde hd es expresion regular
-=~ para condicionales en varibalses regulares
+~ para condicionales en varibalses regulares
 yield bloque a mostrar de algo asociado
+=end
