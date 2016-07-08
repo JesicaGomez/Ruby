@@ -39,3 +39,4 @@ p y.inspect
 #nuevo del metodo new_name
 x.nombre = "isgf" 
 p x.nombre
+private :duracion
