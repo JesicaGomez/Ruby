@@ -8,6 +8,8 @@ class Reto
 	def initialize(x, y)
 		@x = x
 		@y = y
+		@sum = 0
+		@i = 1
 	end
 	def suma
 	    w = @x + @y
@@ -19,15 +21,27 @@ class Reto
 		z = @x * @y
 	end
 	def perfecto
-		for (i = 1, i <= @x, i++)
-			if @x % i == 0
-			   sum += i
+		while  @i < @x do
+			if
+			  @x % @i == 0
+			  @sum += @i
+			  if
+			    @sum == @x
+			    p "Su número es perfecto"
+			  else
+			   	p "Su número no es perfecto"
+			   end
+			end
+
+		end
+	end
 	 
+
 
 end
 es = Reto.new(x, y)
 p "la suma de los números es #{es.suma}"
 p "la resta de los nùmeros es #{es.resta}"
-p "la multiplicaciòn de los nùmeros es #{es.multiplicacion}"
-p "#{es.}"
+p "#{es.perfecto}"
+
 
